@@ -1,0 +1,18 @@
+@media screen and (min-width: 850px) {
+    
+    @keyframes EntrarDesdeIzq {
+        from { 
+            transform: translateX(-200%);
+        } to { 
+            transform: translateX(0);
+        }
+    }
+    
+    .banner {
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        animation: EntrarDesdeIzq
+                    1.5s ease;
+    }
+}

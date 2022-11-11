@@ -1,0 +1,147 @@
+@media (min-width: 850px) {
+    .titulo {
+        background-color: #f6f6f6;
+        display: grid;
+        grid-template-columns: 55% 25%;
+        grid-template-rows: 40% 20% 30%;
+        justify-content: space-evenly;
+        padding-top: 2%;
+    }
+    
+    .titulo__perfil{
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        margin-top: 2.50rem;
+        border-radius: 100%;
+       
+        
+    }
+    
+    .titulo__bio{
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+        align-self: flex-end;
+        text-align: justify;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #464646;
+        margin-left: 10%;
+    }
+    
+    .titulo__subsection{
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+        text-align: left;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 26px;
+        color: #464646;
+        margin-left: 10%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+    
+    .titulo__network{
+        grid-column: 1 / 2;
+        grid-row: 3 / 3;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 10%;
+        justify-content: space-around;
+    }
+    
+    .titulo__network__item {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #464646;
+        margin-right: 1.85rem;
+        margin-top: 1%;
+    }
+    }
+    
+    @media only screen and (max-width: 479px) {
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+        }
+    
+        .titulo__perfil{
+            width: 180px;
+            border-radius: 100%;
+            border: 1px solid;
+        }
+    
+        .titulo__bio{
+            align-self: flex-start;
+            text-align: center;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 20px;
+            margin: 5%;
+        }
+    
+        .titulo__subsection{
+            text-align: center;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 5%;
+        }
+    }
+    
+    @media (max-width: 850px) {
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+        }
+    
+        .titulo__perfil{
+            width: 220px;
+            border-radius: 100%;
+            border: 1px solid;
+        }
+    
+        .titulo__bio{
+            align-self: flex-start;
+            text-align: center;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 20px;
+            margin: 5%;
+        }
+    
+        .titulo__subsection{
+            text-align: center;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 5%;
+        }
+    }
+    
+    @media (min-width: 852px) and (max-width: 1086px) {
+        .titulo__bio{
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 41px;
+        }
+        .titulo__perfil{
+            width: 220px;
+            border-radius: 100%;
+            border: 1px solid;
+        }
+    }

@@ -1,0 +1,93 @@
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: #fff;    
+    background: linear-gradient(#fff, turquoise); 
+}
+
+.hobbies__titulo {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 48px;  
+    text-align: center;
+    color: #464646;
+    padding: 2rem;
+}
+
+.hobbies__line{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 176px;
+    height: 174px;
+    background: #FFFFFF;
+    transition: 1s all; 
+    border-radius: 0 30px 0 30px;
+    
+}
+
+.hobbies__box:hover{
+    background: #d8e8f1;
+    transform: scale(1.1);
+}
+
+.hobbies__box--list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies__img{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.hobbies__name{
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 20px;  
+    text-align: center;
+    color: #464646;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    .hobbies__line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .hobbies__box {
+        margin-top: 6%;
+        
+    }
+
+}
+
+@media (max-width: 800px) {
+    .hobbies__line{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    .hobbies__box {
+        margin-top: 6%;
+    }
+}
